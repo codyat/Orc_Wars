@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{469767EB-09A3-7ED8-68FC-2FDDB6A32D3F}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_4;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Core\AI\AIPath.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Core\AI\NavmeshController.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Core\AI\Seeker.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Core\AstarData.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Core\AstarMath.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Core\AstarPath.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Core\GraphUpdateScene.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Core\GraphUpdateShape.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Core\Misc\AnimationLink.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Core\Misc\AstarDebugger.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Core\Misc\BinaryHeap.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Core\Misc\GraphEditorBase.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Core\Misc\GraphModifier.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Core\Misc\Int3.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Core\Misc\ListPool.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Core\Misc\NodeLink.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Core\Misc\NodeLink2.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Core\Misc\NodeLink3.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Core\Misc\ObjectPool.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Core\Misc\PathPool.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Core\Misc\StackPool.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Core\Misc\ThreadControlQueue.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Core\Nodes\GraphNode.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Core\Path.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Core\PathHandler.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Core\Serialization\JsonConverters.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Core\Serialization\JsonSerializer.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Core\astarclasses.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\ExampleScenes\Example12_Procedural\ProceduralGridMover.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\ExampleScenes\Example12_Procedural\ProceduralWorld.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\ExampleScenes\ExampleScripts\AIFollow.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\ExampleScenes\ExampleScripts\AstarSmoothFollow2.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\ExampleScenes\ExampleScripts\DoorController.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\ExampleScenes\ExampleScripts\DynamicGridObstacle.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\ExampleScenes\ExampleScripts\MineBotAI.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\ExampleScenes\ExampleScripts\ObjectPlacer.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\ExampleScenes\ExampleScripts\TargetMover.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Generators\Base.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Generators\GridGenerator.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Generators\NavMeshGenerator.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Generators\NodeClasses\GridNode.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Generators\NodeClasses\PointNode.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Generators\NodeClasses\TriangleMeshNode.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Generators\PointGenerator.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Generators\QuadtreeGraph.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Generators\Utilities\BBTree.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Generators\Utilities\NavMeshRenderer.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Generators\Utilities\ObjImporter.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Modifiers\AlternativePath.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Modifiers\FunnelModifier.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Modifiers\Modifiers.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Modifiers\RaycastModifier.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Modifiers\SimpleSmoothModifier.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Modifiers\StartEndModifier.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Navmesh\RelevantGraphSurface.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Pathfinders\ABPath.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Utilities\AstarChecksum.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Utilities\AstarMemory.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Utilities\AstarParallel.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Utilities\AstarProfiler.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Utilities\DotNetReplacements.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Utilities\GraphUpdateUtilities.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Utilities\LockFreeStack.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Utilities\PathUtilities.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Utilities\ProfileHelper.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Utilities\SizeProfiler.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Utilities\UnityReferenceHelper.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\changelog.cs" />
+     <Compile Include="Assets\Levels 1-10\AssetStoreDownloads\Standard Assets\Water (Basic)\Sources\Scripts\WaterSimple.cs" />
+     <Compile Include="Assets\Levels 1-10\Inst_Tiles.cs" />
+     <Compile Include="Assets\Levels 1-10\Inst_Tiles1.cs" />
+     <Compile Include="Assets\Levels 1-10\Player\HUD\HUD.cs" />
+     <Compile Include="Assets\Levels 1-10\Player\ObjectiveList.cs" />
+     <Compile Include="Assets\Levels 1-10\Player\Player.cs" />
+     <Compile Include="Assets\Levels 1-10\Player\UserInput.cs" />
+     <Compile Include="Assets\Levels 1-10\RTS\Enum.cs" />
+     <Compile Include="Assets\Levels 1-10\RTS\ResourceManager.cs" />
+     <Compile Include="Assets\Levels 1-10\RTS\WorkManager.cs" />
+     <Compile Include="Assets\Levels 1-10\Resources\GameObjectList.cs" />
+     <Compile Include="Assets\Levels 1-10\WorldObject\Building\Barracks\Barracks.cs" />
+     <Compile Include="Assets\Levels 1-10\WorldObject\Building\Building.cs" />
+     <Compile Include="Assets\Levels 1-10\WorldObject\Building\Buildings.cs" />
+     <Compile Include="Assets\Levels 1-10\WorldObject\Building\Castle\Castle.cs" />
+     <Compile Include="Assets\Levels 1-10\WorldObject\Building\GoldMine\GoldMine.cs" />
+     <Compile Include="Assets\Levels 1-10\WorldObject\Building\Refinery\Refinery.cs" />
+     <Compile Include="Assets\Levels 1-10\WorldObject\Projectile.cs" />
+     <Compile Include="Assets\Levels 1-10\WorldObject\Resource\ImageTree.cs" />
+     <Compile Include="Assets\Levels 1-10\WorldObject\Resource\OreDeposit\Ore.cs" />
+     <Compile Include="Assets\Levels 1-10\WorldObject\Resource\OreDeposit\OreDeposit.cs" />
+     <Compile Include="Assets\Levels 1-10\WorldObject\Resource\Resource.cs" />
+     <Compile Include="Assets\Levels 1-10\WorldObject\TeamColor.cs" />
+     <Compile Include="Assets\Levels 1-10\WorldObject\Unit\Troops\BlueGoblin\BlueGoblin.cs" />
+     <Compile Include="Assets\Levels 1-10\WorldObject\Unit\Troops\Demon\Demon.cs" />
+     <Compile Include="Assets\Levels 1-10\WorldObject\Unit\Troops\Orc\Orc.cs" />
+     <Compile Include="Assets\Levels 1-10\WorldObject\Unit\Troops\SkullWarrior\SkullWarrior.cs" />
+     <Compile Include="Assets\Levels 1-10\WorldObject\Unit\Troops\Swordsman.cs" />
+     <Compile Include="Assets\Levels 1-10\WorldObject\Unit\Troops\TankProjectile.cs" />
+     <Compile Include="Assets\Levels 1-10\WorldObject\Unit\Unit.cs" />
+     <Compile Include="Assets\Levels 1-10\WorldObject\Unit\Units.cs" />
+     <Compile Include="Assets\Levels 1-10\WorldObject\WorldObject.cs" />
+     <Compile Include="Assets\Main Menu\AutoFade.cs" />
+     <Compile Include="Assets\Win Screen\wintext.cs" />
+     <None Include="Assets\Levels 1-10\AssetStoreDownloads\Warrior 2 Swords\sources\Toon Shading\Toony-Basic.shader" />
+     <None Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh2.shader" />
+     <None Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Plugins\DotNetZip\License.txt" />
+     <None Include="Assets\Levels 1-10\AssetStoreDownloads\Warrior 2 Swords\sources\Toon Shading\Toony Gooch RimOutline Hard.shader" />
+     <None Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\ExampleScenes\Materials\Projector Multiply.shader" />
+     <None Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\ExampleScenes\Materials\DiffuseAlwaysVisible.shader" />
+     <None Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Plugins\dependencies.txt" />
+     <None Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\ExampleScenes\_Example Scenes.txt" />
+     <None Include="Assets\Levels 1-10\AssetStoreDownloads\Warrior 2 Swords\sources\Toon Shading\Toony-BasicOutline.shader" />
+     <None Include="Assets\Levels 1-10\AssetStoreDownloads\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+     <None Include="Assets\Levels 1-10\AssetStoreDownloads\sky5X\README.txt" />
+     <None Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Readme_upgrading.txt" />
+     <None Include="Assets\Levels 1-10\AssetStoreDownloads\Warrior 2 Swords\sources\Toon Shading\Toony-LightedOutline.shader" />
+     <None Include="Assets\Levels 1-10\AssetStoreDownloads\Warrior 2 Swords\sources\Toon Shading\Toony-Lighted.shader" />
+     <None Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\ExampleScenes\Materials\Projector Light.shader" />
+     <None Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Readme.txt" />
+     <None Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Plugins\JsonFx\License.txt" />
+     <None Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Plugins\JsonFx\Readme.txt" />
+     <None Include="Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\link.xml" />
+ <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+ <HintPath>Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ </Reference>
+ <Reference Include="Pathfinding.JsonFx">
+ <HintPath>Assets\Levels 1-10\AssetStoreDownloads\AstarPathfindingProject\Plugins\JsonFx\Pathfinding.JsonFx.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
